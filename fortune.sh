@@ -25,3 +25,9 @@ echo -e  "\n${RESPONSES[$N]}"
 
 # [[ "hello world" =~ ^h.+d$ ]]; echo $? -- to check a pattern 
 
+: '
+  for server in "${servers[@]}"
+  do
+      echo "Processing $server"
+  done
+'
